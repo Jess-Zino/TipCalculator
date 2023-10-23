@@ -1,0 +1,204 @@
+:root{
+  --VeryDarkCyan: hsl(183, 100%, 15%);
+  --DarkGrayishCyan: hsl(186, 14%, 43%);
+  --GrayishCyan: hsl(184, 14%, 56%);
+  --LightGrayishCyan: hsl(185, 41%, 84%);
+  --VeryLightGrayishCyan: hsl(202, 50%, 97%);
+  --white:hsl(0, 0%, 100%);
+  --StrongCyan: hsl(172, 67%, 45%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--LightGrayishCyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo{
+  text-align: center;
+  color: var(--DarkGrayishCyan);
+  font-family: "space mono";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.card{
+  background-color: var(--white);
+  width: 55vw;
+  height: fit fit-content;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  border-radius: 20px;
+  gap:2rem;
+}
+/*Input Section*/
+
+.userIn{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.userIn .formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.userIn .formItem label{
+font-family: "Space Mono";
+font-size: .7rem;
+font-weight: 800;
+color: var(--DarkGrayishCyan);
+}
+.userIn .formItem .item{
+  background-color: var(--VeryLightGrayishCyan);
+  color: var(--VeryDarkCyan);
+}
+.userIn .formItem .item b{
+  position: relative;
+  font-family: "Space Mono";
+  left:5%
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.userIn .formItem input{
+  width: 20vw;
+  height: 6vh;
+  outline: none;
+  border: none;
+  background-color: var(--VeryLightGrayishCyan);
+  font-size: 1.1rem;
+  font-weight: 800;
+  font-family: "Space Mono";
+  color: var(--VeryDarkCyan);
+  text-align: right;
+}
+
+.userIn .formItem .options {
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  gap: 10px;
+}
+
+
+
+
+.userIn .formItem .options input::placeholder{
+  color: var(--VeryDarkCyan);
+  font-size: 1.1rem;
+  text-align: center;
+}
+.userIn .formItem .options .option input[type="text"]{
+  width: 6vw;
+  height: 5vh;
+  background-color: var(--VeryLightGrayishCyan);
+
+}
+
+
+
+label.radio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #39cccc;
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+
+input[type="radio"]:checked + label.radio-button {
+  background-color: #39cccc; 
+  color:white;
+}
+input[type="radio"] {
+  display: none;
+}
+
+/* Style the label to look like a button */
+label.radio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--VeryDarkCyan);
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px; /
+}
+
+/* Style the text input */
+
+/*Input Section*/
+
+/*Calculator Section*/
+.tipCalc{
+flex:1;
+padding: 1rem;
+border-radius: 5px;
+background-color: var(--VeryDarkCyan);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.tipCalc .tips{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+
+}
+.tipCalc .tips .tip{
+  width: 23vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+}
+.tipCalc .tips .tip .labels{
+  display: flex;
+  flex-direction: column;
+}
+.tipCalc .tips .tip .labels label{
+  color: var(--VeryLightGrayishCyan);
+  font-family: "Space mono";
+  font-size: .7rem;
+}
+.tipCalc .tips .tip .labels label:last-child{
+  color: var(--GrayishCyan);
+
+}
+.tipCalc .tips .tip p{
+  font-size: 2rem;
+  font-family: "Space mono";
+color: var(--StrongCyan);
+}
+.tipCalc button{
+  background-color: #0d686d;
+  outline: none;
+  border: none;
+  width: fit-content;
+  padding: .5rem 8rem;
+  color: var(--VeryDarkCyan);
+  font-family: "Space Mono";
+  font-size: 1rem;
+}
+/*Calculator Section*/

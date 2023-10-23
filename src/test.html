@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Radio Button with Text Input</title>
+    <style>
+        /* Hide the radio button */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Style the label to look like a button */
+        label.radio-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0074d9; /* Button background color */
+            color: #fff; /* Button text color */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px; /* Add some spacing between options */
+        }
+
+        /* Style the text input */
+        input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            width: 100px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Radio button styled as button with text input -->
+    <input type="radio" id="option1" name="selection" value="Option 1">
+    <input type="text" id="textOption1" placeholder="Value" class="radio-button">
+
+    <input type="radio" id="option2" name="selection" value="Option 2">
+    <label for="option2" class="radio-button">Option 2</label>
+
+    <input type="radio" id="option3" name="selection" value="Option 3">
+    <label for="option3" class="radio-button">Option 3</label>
+</body>
+</html>
